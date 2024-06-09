@@ -1,15 +1,3 @@
-const wrapper = document.querySelector(".wrapper")
-const aboutImg = document.querySelector(".about-img-2")
-
-aboutImg.addEventListener("click", () => {
-    aboutImg.style.position = "fixed"
-    aboutImg.style.marginTop = "-50xp"
-    aboutImg.style.marginLeft = "-500xp"
-
-    wrapper.appendChild(aboutImg)
-})
-
-
 const slider = document.getElementById("slider");
 const slides = document.querySelectorAll(".slide");
 let currentIndex = 0;
