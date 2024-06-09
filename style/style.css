@@ -1,0 +1,824 @@
+/* generals */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+html,
+body {
+    font-family: "Open Sans", sans-serif;
+    color: rgb(84, 84, 84);
+}
+
+.container {
+    width: 100%;
+    max-width: 1148px;
+    margin: 0 auto;
+}
+
+/* header styles */
+
+header {
+    width: 100%;
+    box-shadow: 2px 2px 4px #000;
+    /* position: fixed; */
+    background: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 5px;
+    z-index: 10;
+}
+
+.header__list {
+    display: flex;
+    gap: 32px;
+    text-transform: uppercase;
+}
+
+.header__link {
+    color: rgb(84, 84, 84);
+    font-family: FuturaBookC;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.header__link:hover {
+    color: #00bafc;
+}
+
+.header__email {
+    display: flex;
+    align-items: center;
+}
+
+/* header-content styles */
+
+.header__content__flex {
+    display: flex;
+}
+
+.header__content__text {
+    margin-top: 150px;
+}
+
+.header__content__text h1 {
+    font-family: FuturaBookC;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 0px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin-top: 40px;
+    color: rgb(84, 84, 84);
+}
+
+.header__content__text h1:nth-child(2) {
+    font-family: FuturaBookC;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 0px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: rgb(67, 124, 154);
+}
+
+.header__content__text p {
+    color: rgb(84, 84, 84);
+    font-family: FuturaLightC;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-top: 26px;
+}
+
+.header__content__img {
+    height: 700px;
+}
+
+.header__content__img img {
+    height: 500px;
+    margin-top: 170px;
+}
+
+.header__content__text button {
+    background: rgb(67, 124, 154);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: FuturaBookC;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 18px 56px;
+    margin-top: 82px;
+}
+
+.header__content__text button:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(67, 124, 154);
+    border: 1px solid rgb(67, 124, 154);
+    transition: 0.5s;
+}
+
+.header__content__gps {
+    display: flex;
+}
+
+.header__content__gps h1 {
+    font-family: FuturaBookC;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0%;
+    margin-left: 15px;
+}
+
+/* About styles */
+
+.about {
+    display: flex;
+    margin-top: 107px;
+}
+
+.about-img-1 {
+    margin-top: 100px;
+}
+
+.about-img-2 {
+    margin-top: -500px;
+    margin-left: 50px;
+}
+
+.about__title {
+    color: rgb(51, 51, 51);
+    font-family: FuturaMediumC;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: right;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.about__content p {
+    color: rgb(84, 84, 84);
+    font-family: FuturaLightC;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: right;
+}
+
+.about__cnt {
+    display: flex;
+    margin-top: 84px;
+    margin-left: 200px;
+    gap: 122px;
+}
+
+.about__cnt h1 {
+    color: rgb(67, 124, 154);
+    font-family: FuturaLightC;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 0%;
+    box-sizing: border-box;
+    border: 5px solid rgb(67, 124, 154);
+    background: rgba(196, 196, 196, 0);
+    padding: 31px 20px;
+}
+
+.about__cnt h3 {
+    color: rgb(84, 84, 84);
+    font-family: FuturaMediumC;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: 24px;
+    margin-bottom: 10px;
+}
+
+/* Advantges styles */
+
+.advantages {
+    margin-top: 145px;
+}
+
+.advantages__content {
+    display: flex;
+}
+
+.advantages__content img {
+    margin-top: 50px;
+    background: rgb(67, 124, 154);
+}
+
+.advantages__content h1 {
+    color: rgb(84, 84, 84);
+    font-family: FuturaBookC;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.advantages__content p {
+    margin: 10px 0px;
+    color: rgb(0, 0, 0);
+    font-family: FuturaLightC;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 13px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.advantages__cnt__one {
+    display: flex;
+    justify-content: center;
+}
+
+/* Characteristics styles */
+
+.characteristics {
+    margin-top: 50px;
+}
+
+.characteristics__content h1 {
+    color: rgb(51, 51, 51);
+    font-family: FuturaMediumC;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.characteristics__content div {
+    margin-left: 520px;
+    margin-top: 119px;
+}
+
+.characteristics__content h2 {
+    color: rgb(0, 0, 0);
+    font-family: FuturaLightC;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.line__one {
+    position: absolute;
+    margin-left: 33.3%;
+    margin-top: 20px;
+    border: 2px solid rgb(67, 124, 154);
+    width: 116px;
+}
+
+.line__two {
+    position: absolute;
+    margin-left: 21%;
+    margin-top: 66px;
+    border: 2px solid rgb(67, 124, 154);
+    width: 208.41px;
+    transform: rotate(-26.7deg);
+}
+
+.line__three {
+    position: absolute;
+    margin-top: 111px;
+    margin-left: 21.3%;
+    background: rgb(67, 124, 154);
+    width: 10px;
+    height: 10px;
+    transform: rotate(-30deg);
+    z-index: 9;
+}
+
+/* Materials styles */
+
+.materials__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.materials__content h1 {
+    color: rgb(51, 51, 51);
+    font-family: FuturaMediumC;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 131px;
+}
+
+.materials__content h2 {
+    color: rgb(67, 124, 154);
+    font-family: FuturaBookC;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.materials__content p {
+    color: rgb(0, 0, 0);
+    font-family: FuturaLightC;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 13px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 305px;
+    height: 52px;
+    margin: 15px 0px 70px 0px;
+}
+
+/* lifecycle styles */
+
+.lifecycle h1 {
+    color: rgb(51, 51, 51);
+    font-family: FuturaMediumC;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: right;
+    text-transform: uppercase;
+    margin: 200px 0px 120px 0px;
+}
+
+/* rightnow styles */
+
+.rightnow div {
+    position: absolute;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 100px;
+}
+
+.rightnow h1 {
+    font-family: FuturaLightC;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 0px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.rightnow span {
+    color: rgb(67, 124, 154);
+    font-size: 42px;
+}
+
+.rightnow button {
+    background: rgb(67, 124, 154);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: FuturaBookC;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 18px 56px;
+    margin-bottom: 10px;
+    margin-left: 40%;
+    margin-top: -150px;
+}
+
+.rightnow button:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(67, 124, 154);
+    border: 1px solid rgb(67, 124, 154);
+    transition: 0.5s;
+}
+
+/* delivery styles */
+
+.delivery {
+    background-image: url(../images/Mappa_01\ 1.svg);
+    margin-top: 100px;
+}
+
+.delivery h1 {
+    color: rgb(51, 51, 51);
+    font-family: FuturaMediumC;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 96px;
+}
+
+.delivery p {
+    width: 613px;
+    height: 144px;
+    color: rgb(84, 84, 84);
+    font-family: FuturaLightC;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 96px;
+}
+
+.delivery button {
+    background: rgb(67, 124, 154);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: FuturaBookC;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 18px 56px;
+    margin-bottom: 50px;
+}
+
+.delivery button:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(67, 124, 154);
+    border: 1px solid rgb(67, 124, 154);
+    transition: 0.5s;
+}
+
+/* Become styles */
+
+.become {
+    background-image: url(../images/become-img.svg);
+}
+
+.become__content h1 {
+    color: rgb(51, 51, 51);
+    font-family: FuturaMediumC;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.become__content h2 {
+    width: 617px;
+    height: 84px;
+    color: rgb(84, 84, 84);
+    font-family: FuturaMediumC;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 136px;
+}
+
+.become__content p {
+    width: 617px;
+    height: 78px;
+    color: rgb(84, 84, 84);
+    font-family: FuturaLightC;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 114px 0px;
+    margin-left: 222px;
+}
+
+.become__cnt {
+    display: flex;
+    justify-content: space-between;
+    gap: 290px;
+}
+
+.become__cnt h4 {
+    width: 123px;
+    height: 123px;
+    color: rgb(255, 255, 255);
+    font-family: FuturaMediumC;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    background: rgb(67, 124, 154);
+    text-align: center;
+    padding-top: 42px;
+}
+
+.become__cnt h3 {
+    font-family: FuturaLightC;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+/* section what styles */
+
+.what {
+    background-image: url(../images/what-img.svg);
+}
+
+.what__content h1 {
+    color: rgb(84, 84, 84);
+    font-family: FuturaMediumC;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: right;
+    margin: 126px 0px 114px 0px;
+}
+.what__content h2 {
+    color: rgb(84, 84, 84);
+    font-family: FuturaMediumC;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: right;
+    margin: 10px;
+}
+.what__content h3 {
+    color: rgb(84, 84, 84);
+    font-family: FuturaLightC;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.what__content h3:nth-last-child(1) {
+    width: 480px;
+}
+
+.what__content button {
+    color: rgb(255, 255, 255);
+    font-family: FuturaBookC;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    padding: 18px 47px;
+    margin-top: 50px;
+    background: rgb(67, 124, 154);
+    border: none;
+    margin-left: 76.5%;
+}
+
+.what__content button:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(67, 124, 154);
+    border: 1px solid rgb(67, 124, 154);
+    transition: 0.5s;
+}
+
+.what__cnt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.what__flex {
+    display: flex;
+    margin-top: 20px;
+}
+
+/* section contact styles */
+
+.contact {
+    background-image: url(../images/карта\ 1.svg);
+    margin-top: 150px;
+}
+
+.contact__content form {
+    width: 513px;
+    height: 406px;
+    background: rgb(255, 255, 255);
+    margin-left: 68%;
+}
+
+.contact__content h1 {
+    color: rgb(51, 51, 51);
+    font-family: FuturaMediumC;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 36px 0px;
+}
+
+.contact__mar {
+    margin-left: 61px;
+}
+
+.contact__mar div {
+    display: flex;
+    margin-top: 10px;
+}
+.contact__mar p {
+    color: rgb(84, 84, 84);
+    font-family: FuturaLightC;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.contact__content button {
+    color: rgb(255, 255, 255);
+    font-family: FuturaBookC;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    padding: 18px 47px;
+    margin-top: 50px;
+    background: rgb(67, 124, 154);
+    border: none;
+    margin-left: 31%;
+}
+
+.contact__content button:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(67, 124, 154);
+    border: 1px solid rgb(67, 124, 154);
+    transition: 0.5s;
+}
+
+/* footer styles */
+
+footer {
+    height: 288px;
+    background: rgb(84, 84, 84);
+}
+
+.footer {
+    display: flex;
+    padding-top: 70px;
+    justify-content: space-between;
+}
+
+.footer a {
+    color: rgb(255, 255, 255);
+    font-family: FuturaBookC;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.footer a:hover {
+    color: #00bafc;
+}
+
+.footer li {
+    margin-bottom: 15px;
+}
+
+.footer__email {
+    display: flex;
+    margin-bottom: 13px;
+}
+
+.footer p {
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    font-family: FuturaLightC;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 33px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.footer h1 {
+    color: rgb(255, 255, 255);
+    font-family: FuturaMediumC;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 23px;
+}
+
+footer h2 {
+    color: rgb(255, 255, 255);
+    font-family: FuturaLightC;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+
+.materials__slider{
+    margin-top: 170px;
+}
+
+.slide:first-child {
+    display: block;
+}
+
+.slider-container {
+    width: 647px;
+    height: 462px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.active {
+    background: lightblue;
+}
+
+.slider__btn{
+    text-align: center;   
+    margin-top: 15px;
+}
+
+.slider__btn button{
+    padding: 6px 12px;
+    background: #00bafc;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.slider__btn button:hover{
+    background: #fff;
+    color: #00bafc;
+    border:2px solid #00bafc;
+}
